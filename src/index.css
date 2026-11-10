@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-heading: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #fbf8f1;
+    color: #1c1917;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: var(--font-serif);
+  }
+
+  .font-modern {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom animations */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.96); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(217, 119, 6, 0.25); }
+  50% { box-shadow: 0 0 25px rgba(245, 158, 11, 0.5); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+.animate-pop-in {
+  animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.glow-amber {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Warm ivory paper background texture with subtle cultural tone */
+.bg-culture-light {
+  background-color: #fbf8f1;
+  background-image: 
+    radial-gradient(rgba(180, 83, 9, 0.05) 1.2px, transparent 1.2px),
+    linear-gradient(to bottom, rgba(254, 243, 199, 0.25), transparent);
+  background-size: 24px 24px, 100% 100%;
+}
+
+/* Custom subtle scrollbar if needed */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5eedf;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6c7b2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
