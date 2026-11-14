@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import { useState } from 'react';
 import { CultureCanvas } from './components/CultureCanvas';
 import { QuestionNavBar } from './components/QuestionNavBar';

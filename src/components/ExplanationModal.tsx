@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React from 'react';
 import { BookOpen, CheckCircle, Lightbulb, Sparkles, ArrowRight, X } from 'lucide-react';
 import type { Question } from '../types';

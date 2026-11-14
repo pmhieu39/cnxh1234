@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 // Web Audio API Synthesizer - 100% Offline, Zero Latency
 
 class SoundManager {

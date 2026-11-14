@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Maximize2, Minimize2, BookOpen, Trophy, Sparkles, RotateCcw } from 'lucide-react';
 import { sounds } from '../utils/soundEffects';

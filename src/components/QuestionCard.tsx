@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React, { useEffect, useState } from 'react';
 import { CheckCircle, XCircle, ArrowRight, ArrowLeft, Lightbulb, Smile, Quote, Eye, BookOpen, RotateCcw } from 'lucide-react';
 import confetti from 'canvas-confetti';

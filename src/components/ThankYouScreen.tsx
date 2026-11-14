@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React, { useEffect } from 'react';
 import { Heart, Sparkles, RotateCcw, Award, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';

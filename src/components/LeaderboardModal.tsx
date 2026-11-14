@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React from 'react';
 import { Trophy, Medal, Plus, Minus, RotateCcw, X } from 'lucide-react';
 import type { TeamScore } from '../types';

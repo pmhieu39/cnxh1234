@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React from 'react';
 import { Play, Users, BookOpen, Flame, Compass, CheckCircle2 } from 'lucide-react';
 import type { GameMode } from '../types';

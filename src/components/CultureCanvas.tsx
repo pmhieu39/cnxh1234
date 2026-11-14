@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React, { useEffect, useRef } from 'react';
 
 interface Particle {

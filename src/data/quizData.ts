@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import type { Question } from '../types';
 
 export const QUIZ_QUESTIONS: Question[] = [

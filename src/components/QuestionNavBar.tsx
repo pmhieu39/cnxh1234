@@ -1,3 +1,4 @@
+/** @copyright Bản quyền thuộc MH 2026 */
 import React from 'react';
 import { Check } from 'lucide-react';
 import type { UserAnswerRecord } from '../types';

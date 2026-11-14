@@ -1,3 +1,4 @@
+﻿/** @copyright Bản quyền thuộc MH 2026 */
 import React, { useState } from 'react';
 import { X, BookOpen, Heart, ShieldCheck, Building2, Trees } from 'lucide-react';
 
@@ -17,7 +18,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
         {/* Top Header */}
         <div className="p-4 sm:p-5 border-b border-stone-200 flex items-center justify-between bg-amber-50/70">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center border border-amber-300">
+            <div className="w-10 h-10 rounded-xl bg-red-700 text-amber-300 flex items-center justify-center border border-amber-400/50 shadow-sm">
               <BookOpen className="w-5 h-5" />
             </div>
             <div>
@@ -44,7 +45,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
             onClick={() => setActiveTab('diagrams')}
             className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 font-modern cursor-pointer ${
               activeTab === 'diagrams'
-                ? 'bg-amber-600 text-white shadow-xs'
+                ? 'bg-red-700 text-amber-100 shadow-sm border border-red-800'
                 : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
             }`}
           >
@@ -54,7 +55,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
             onClick={() => setActiveTab('pillars')}
             className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 font-modern cursor-pointer ${
               activeTab === 'pillars'
-                ? 'bg-amber-600 text-white shadow-xs'
+                ? 'bg-red-700 text-amber-100 shadow-sm border border-red-800'
                 : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
             }`}
           >
@@ -64,7 +65,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
             onClick={() => setActiveTab('principles')}
             className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 font-modern cursor-pointer ${
               activeTab === 'principles'
-                ? 'bg-amber-600 text-white shadow-xs'
+                ? 'bg-red-700 text-amber-100 shadow-sm border border-red-800'
                 : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
             }`}
           >
@@ -74,7 +75,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
             onClick={() => setActiveTab('quote')}
             className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all shrink-0 font-modern cursor-pointer ${
               activeTab === 'quote'
-                ? 'bg-amber-600 text-white shadow-xs'
+                ? 'bg-red-700 text-amber-100 shadow-sm border border-red-800'
                 : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
             }`}
           >
@@ -88,7 +89,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
           {activeTab === 'diagrams' && (
             <div className="space-y-4 animate-pop-in">
               <div className="text-center max-w-2xl mx-auto mb-2">
-                <span className="text-xs uppercase tracking-widest text-amber-800 font-bold font-modern">
+                <span className="text-xs uppercase tracking-widest text-red-700 font-bold font-modern">
                   HÌNH 1: SƠ ĐỒ CƠ CHẾ
                 </span>
                 <h4 className="text-xl font-bold font-serif-title text-stone-900 mt-0.5">
@@ -165,7 +166,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
           {activeTab === 'pillars' && (
             <div className="space-y-4 animate-pop-in">
               <div className="text-center max-w-2xl mx-auto mb-2">
-                <span className="text-xs uppercase tracking-widest text-amber-800 font-bold font-modern">
+                <span className="text-xs uppercase tracking-widest text-red-700 font-bold font-modern">
                   HÌNH 3: BỐN TRỤ CỘT MỤC TIÊU
                 </span>
                 <h4 className="text-xl font-bold font-serif-title text-stone-900 mt-0.5">
@@ -233,7 +234,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
           {activeTab === 'principles' && (
             <div className="space-y-3 animate-pop-in">
               <div className="text-center max-w-2xl mx-auto mb-2">
-                <span className="text-xs uppercase tracking-widest text-amber-800 font-bold font-modern">
+                <span className="text-xs uppercase tracking-widest text-red-700 font-bold font-modern">
                   HÌNH 2: NĂM PHƯƠNG HƯỚNG CƠ BẢN
                 </span>
                 <h4 className="text-xl font-bold font-serif-title text-stone-900 mt-0.5">
@@ -265,7 +266,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
           {activeTab === 'quote' && (
             <div className="space-y-4 animate-pop-in">
               <div className="text-center max-w-2xl mx-auto mb-2">
-                <span className="text-xs uppercase tracking-widest text-amber-800 font-bold font-modern">
+                <span className="text-xs uppercase tracking-widest text-red-700 font-bold font-modern">
                   HÌNH 4: MỐI QUAN HỆ BIỆN CHỨNG
                 </span>
                 <h4 className="text-xl font-bold font-serif-title text-stone-900 mt-0.5">
@@ -320,7 +321,7 @@ export const SummaryDrawer: React.FC<SummaryDrawerProps> = ({ isOpen, onClose })
           <span>Giáo trình Chủ nghĩa xã hội khoa học • Đại hội XIII của Đảng</span>
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs transition-colors cursor-pointer"
+            className="px-4 py-1.5 rounded-lg bg-red-700 hover:bg-red-800 text-amber-100 font-bold text-xs border border-red-800 transition-colors cursor-pointer"
           >
             Đóng Lại & Tiếp Tục
           </button>
